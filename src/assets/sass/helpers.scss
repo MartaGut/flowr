@@ -1,0 +1,8 @@
+.pink {
+    color: $color-secondary;
+}
+
+@mixin btn-round {
+    padding: 12px;
+    border-radius: 20px;
+}

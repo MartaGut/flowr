@@ -1,0 +1,27 @@
+* {
+  font-family: $mont;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cover-bgr {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  background: linear-gradient(270deg, #ECBCB3 0%, #EAA79E 100%);
+  color: $white;
+  border: none;
+}
+
+.btn-inactive {
+  background: rgba(0, 0, 0, 0.5);
+  color: $white;
+  border: none;
+}

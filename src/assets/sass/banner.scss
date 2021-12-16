@@ -1,0 +1,28 @@
+.banner-background {
+    min-height: 500px;
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        flex-direction: column;
+        color: $white;
+        text-align: center;
+        margin-bottom: 90px;
+
+        .banner-input {
+            min-width: 600px;
+            min-height: 70px;
+        }
+
+        .banner-input {
+            padding: 0 20px;
+        }
+
+        .banner-input::placeholder {
+            color: $color-primary;
+        }
+ 
+        .banner-search-icon {
+            color: $color-secondary;
+            margin-left: -30px;
+        }
+}
