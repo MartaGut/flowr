@@ -15,8 +15,11 @@ function LatestSightings(props) {
 
     return (
         <div>
+            <h2>Sighting List</h2>
+            <h3>Explore between more than 8.427 sightings</h3>
             {props?.sighting?.sightings_list?.map((sighting) => (
                 <div key={sighting.id}>
+                    <button></button>
                     <img src={sighting.picture} alt="Sighting" />
                 </div>
             ))
