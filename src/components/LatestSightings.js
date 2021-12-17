@@ -1,11 +1,34 @@
 import React from "react";
+import { fetchSightings } from "../actions";
+import { useEffect } from 'react';
+import { connect, useDispatch } from "react-redux";
 
-function LatestSightings() {
-    return ( 
+function LatestSightings(props) {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchSightings());
+    }, []);
+
+    console.log(props);
+
+    return (
         <div>
-        hello!
-    </div>
-     );
+            {props?.sighting?.sightings_list?.map((sighting) => (
+                <div key={sighting.id}>
+                    <img src={sighting.picture} alt="Sighting" />
+                </div>
+            ))
+            }
+        </div>
+    );
 }
 
-export default LatestSightings;
+const mapStateToProps = (state) => {
+    return {
+        sighting: state.sighting
+    }
+}
+
+export default connect(mapStateToProps, { fetchSightings })(LatestSightings);

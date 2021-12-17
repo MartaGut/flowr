@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/img/flowr-logo.png';
 import { Link } from 'react-router-dom';
-import Modal from 'react-modal';
 import LoginModal from '../modal/LoginModal';
 import ProfileModal from "./ProfileModal";
 import LoginSuccessModal from '../modal/LoginSuccessModal';
@@ -9,7 +8,6 @@ import NewAccountModal from './NewAccountModal';
 import SignUpSuccessModal from '../modal/SignUpSuccessModal';
 import { useSelector, useDispatch } from "react-redux";
 import { loggedUserInfo, signOut } from '../actions/index';
-import initialStateUser from '../actions/initialStateUser';
 import VezbaModal from '../modal/VezbaModal';
 
 
@@ -34,7 +32,7 @@ function Header() {
         <header className="app-header wrapper">
             <div className="app-header-logo">
                 <a className="app-header-logo-link" >
-                    <img className="app-header-logo-img" src={logo} alt="Logo image" />
+                    <img className="app-header-logo-img" src={logo} alt="Logo" />
                 </a>
             </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from 'react';
-import { useDispatch, useSelector, connect } from "react-redux";
+import { useDispatch, connect } from "react-redux";
 import { fetchFLowers } from "../actions";
 import star from "../assets/img/star.png";
 

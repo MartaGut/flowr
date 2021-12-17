@@ -20,10 +20,10 @@ function ProfileModal(props) {
         props.closeModalUserInfo(false);
     }
 
-    useEffect(() => {
-        // const user = dispatch(loggedUserInfo(token));
-        // return user;
-    }, [])
+    // useEffect(() => {
+    //     const user = dispatch(loggedUserInfo(token));
+    //     return user;
+    // }, [])
 
 
     return (

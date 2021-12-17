@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" exact element={<Flowers/>}></Route>
-          <Route path="/latest-sightings" exact element={<LatestSightings/>}></Route>
-          <Route path="/favorites" exact element={<Favorites/>}></Route>
+          <Route path="/" exact element={<Flowers />}></Route>
+          <Route path="/latest-sightings" exact element={<LatestSightings />}></Route>
+          <Route path="/favorites" exact element={<Favorites />}></Route>
         </Routes>
       </Router>
     </div>

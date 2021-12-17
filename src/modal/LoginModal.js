@@ -30,7 +30,6 @@ function LoginModal(props) {
 
     return (
         <div>
-
             <Modal isOpen={props.kk} ariaHideApp={false} style={{
                 overlay: {
                     position: 'fixed',
@@ -63,7 +62,6 @@ function LoginModal(props) {
                     <button type="submit" className="login-btn">Login to your Account</button>
                 </form>
             </Modal>
-
         </div>
     );
 }

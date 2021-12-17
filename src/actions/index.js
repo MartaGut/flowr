@@ -1,4 +1,4 @@
-import { FETCH_FLOWERS, LOGIN, LOGGED_USER_INFO, SIGN_OUT, SIGN_UP } from "./types";
+import { FETCH_FLOWERS, FETCH_SIGHTINGS, LOGIN, LOGGED_USER_INFO, SIGN_OUT, SIGN_UP } from "./types";
 import axios from '../apis/apis';
 
 export const fetchFLowers = () => async dispatch => {
@@ -10,6 +10,17 @@ export const fetchFLowers = () => async dispatch => {
         type: FETCH_FLOWERS,
         payload: response.data.flowers
     });
+}
+
+export const fetchSightings = () => async dispatch => {
+    const response = await axios.get('/sightings');
+
+    dispatch({
+        type: FETCH_SIGHTINGS,
+        payload: response.data.sightings
+    })
+
+    console.log('sightings' + response.data.sightings);
 }
 
 export const signUp = (user, setModalOpenRegSuccess) => async dispatch => {

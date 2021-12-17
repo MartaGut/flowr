@@ -7,6 +7,5 @@ export default (state = initialStateFlowers(), action) => {
             return { ...state, flowers_list: action.payload };
         default:
             return state;
-    }
-}
-
+    };
+};
